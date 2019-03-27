@@ -20,30 +20,16 @@
     <h1> Sweat 1 year for free!</h1>
   </div>
 
-<form>
-    <input name="name" placeholder="What is your name?" class="name" required />
-    <input name="emailaddress" placeholder="What is your email?" class="email" type="email" required />
-    <input name="code" placeholder="Add you code here and good luck!" class="code" type="code" required></input>
-    <input name="submit" class="btn" type="submit" value="Send" />
-</form>
+  <div class="container">
+    <form name="Promocode" method="post">
+     <input name="name" placeholder="What is your name?" class="name" required />
+     <input name="emailaddress" placeholder="What is your email?" class="email" type="email" required />
+     <input name="number" placeholder="Add you code here and good luck!" class="number" type="number" required></input>
+     <input name="submit" class="btn" type="submit" value="Send" />
+    </form>
+  </div>
 
-<script>
-  let number = ['613884922'];
-
-  let sum = 0
-  strNumber = number.toString();
-    if (strNumber.length != 9) {
-    return false;
-  }
-    for (var i = 0; length = strNumber.length; i < 9, i += 1) {
-    var n = strNumber.charAt(i);
-    sum += n * (length - i);
-  }
-    if (sum % 11 != 0) {
-    return false;
-  }
-
-</script>
+  <script src="validator.js" type="text/javascript"></script>
 
 </body>
 </html>
